@@ -6,7 +6,7 @@ var twitter = new twitterAPI({
 	access_token_secret: "N014Hhl3wMA2d3fv9stIy8oyYilk2jvrP7pGvN13gBCIi"
 });
 
-twitter.stream("user", { track: ['anonymous']}, function(stream) {
+twitter.stream("user", { track: ['AFC','AVFC','CARDIFFCITY','CFC','CPFC','EFC','FFC','HCAFC','LFC','MCFC','MUFC','NUFC','NCFC','SAINTSFC','SCFC','SUFC','SWANS','THFC','WBAFC','WHUFC']}, function(stream) {
 	stream.on('data', function(data) {
 		if (data.user) {
 			console.log (new
